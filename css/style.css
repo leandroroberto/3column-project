@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    width: 68%;
+    height: 65%;
+    flex-direction: row;
+}
+
+.sedans {
+    position: relative;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 2.5rem;
+    width: 33vw;
+    height: 100%;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    position: relative;
+    padding: 2.5rem;
+    width: 33vw;
+    height: 100%;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    position: relative;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 2.5rem;
+    width: 33vw;
+    height: 100%;
+    background-color: hsl(179, 100%, 13%);
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+p {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+button {
+    font-size: .8rem;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    bottom: 2rem;
+    cursor: pointer;
+    padding: .8rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+
+#btn-sedans {
+    color: hsl(31, 77%, 52%);
+    
+}
+
+#btn-suvs {
+    color: hsl(184, 100%, 22%);
+}
+
+#btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 1440px){
+    h1{
+        font-size: 2.8rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-top: 1.6rem 0;
+        line-height: 1.7rem;
+    }
+
+    button{
+        padding: 1.3rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 376px){
+    .container{
+        flex-direction: column;
+        margin-top: auto;
+        width: 100vw;
+        height: 150vh;
+    }
+
+    .sedans{
+        width: 100vw;
+        height: 33.3%;
+    }
+    .suvs{
+        width: 100vw;
+        height: 33.3%;
+    }
+    .luxury{
+        width: 100vw;
+        height: 33.3%;
+    }
+
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    button{
+        padding: .8rem;
+    }
+}
